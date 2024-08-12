@@ -13,7 +13,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container{
-    width: 40%;
+    width: 50%;
     height: auto;
     margin:20px auto;
     border-radius: 8px;
@@ -98,14 +98,14 @@ p{
     display: flex;
     align-items: center;
 }
-#message{
+.message{
     resize: none;
     outline: none;
     border:1px solid rgb(146, 146, 146);
     border-radius: 5px;
     padding: 10px;
     font-size: 1rem;
-    height: 100px;
+    height: 120px;
 }
 
     
@@ -126,4 +126,56 @@ button{
 }
 .hide{
     display: none;
+}
+
+.msg-scuses{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    top: 25px;
+    color: white;
+    padding:25px;
+    border-radius: 10px;
+    background-color: hsl(184.62deg 23.64% 21.57%);
+}
+.msg-scuses .titel-scusess{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.msg-scuses h4{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.msg-scuses span{
+    font-size: 0.9rem;
+}
+
+
+
+@media screen and (max-width:760px) {
+    .first-formation{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .input{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .container{
+        width: 80%;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .chek-input{
+        width: 100%;
+    }
+    .msg-scuses{
+        width: 80%;
+    }
 }

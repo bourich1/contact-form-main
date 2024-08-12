@@ -17,26 +17,33 @@
 </head>
 <body>
 
+  <div class="msg-scuses hide">
+    <div class="titel-scusess">
+      <img src="assets/images/icon-success-check.svg" alt="" style="width: 25px;">
+    <h4>message sent !</h4>
+    </div>
+    <span>Thanks for completing the form. We'll be in touch soon!</span>
+  </div>
   <div class="container">
     <form class="form">
       <h3>Contact Us</h3>
       <div class="first-formation">
         <div class="input">
           <label for="">First Name *</label>
-          <input type="text" required class="inp">
-          <p class="error hide" >This field is required</p>
+          <input type="text"  required  data-err="error1"  class="inp">
+          <p class="hide error1" >This field is required</p>
         </div>
         <div class="input">
           <label for="">Last Name *</label>
-          <input type="text" required class="inp">
-          <p class="hide error">  This field is required</p>
+          <input type="text"  required  data-err="error2"  class="inp">
+          <p class="hide error2">  This field is required</p>
         </div>
       </div>
       <!-- =========== -->
       <div class="input w-100 mt-3">
         <label for="">Email Address *</label>
-        <input type="text" required class="inp">
-        <p class="hide error">Please enter a valid email address
+        <input type="email"  required  data-err="error3" class="inp">
+        <p class="hide error3">Please enter a valid email address
           This field is required</p>
       </div>
       <!-- =========== -->
@@ -44,11 +51,11 @@
         <label for="">Query Type *</label>
         <div class="flex">
           <div class="chek-input mt-2">
-            <input type="radio" required name="check"  class="inpe query"  id="">
+            <input type="radio"  required  data-check="error-check"  name="check"  class="inpe query"  id="">
             <label for="" >General Enquiry</label>
           </div>
           <div class="chek-input mt-2">
-            <input type="radio" required name="check"  class="inpe query"  id="">
+            <input type="radio"  required  data-check="error-check"  name="check"  class="inpe query"  id="">
             <label for="">Support Request</label>
           </div>
         </div>
@@ -57,17 +64,17 @@
       <!-- =========== -->
       <div class="input w-100 mt-3">
         <label for="">Message *</label>
-        <textarea name="" required class="inp"></textarea>
-        <p class="hide error">This field is required</p>
+        <textarea name="" required data-err="error4"  class="message inp"></textarea>
+        <p class="hide error4">This field is required</p>
       </div>
       <!-- =========== -->
        <div class="accept mt-3 ">
-        <input type="checkbox" required class="check inpe" name="" id="">
+        <input type="checkbox" required  class="check " name="" id="">
         <label>I consent to being contacted by the team</label>
       </div>
-      <p class="hide error-check">To submit this form, please consent to being contacted</p>
+      <p class="hide err">To submit this form, please consent to being contacted</p>
        
-      <button type="submit"  class="mt-3 mb-3 disabled" >Submit</button>
+      <button type="submit"   class="mt-3 mb-3 " >Submit</button>
 
     </form>
   </div>
